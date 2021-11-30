@@ -1,13 +1,39 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
 .App {
-  text-align: center;
+  overflow-y: auto;
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+
+  background: #16BFFD;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #eb6c98, #50cbf8);
+  background: linear-gradient(to top, #eb6c98, #50cbf8); 
+}
+
+.container{
+  width: 600px;
+  margin: 30px auto;
+  padding: 20px 30px;
+  background-color: orange;
+  border: 3px solid black;
+  box-shadow: 0 0 20px rgb(54, 53, 53);
+}
+.heading{
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  color: blue;
+  text-shadow: 3px 3px 3px black;
+}
+li{
+  margin-left: 40px;
 }
 
 .img_btn{
@@ -15,9 +41,9 @@
 }
 
 .input{
-  margin-top: 20px;
-  width: 200px;
-  height: 30px;
+  margin: 15px 0 ;
+  width: 210px;
+  height: 35px;
   padding: 5px;
   border-radius: 2px;
   border: none;
@@ -29,4 +55,15 @@
   outline: none !important;
   border: 1px solid lightskyblue;
   box-shadow: 0 0 5px 2px rgb(91, 91, 243);
+}
+.center{
+  text-align: center;
+}
+
+.list{
+  margin: 10px 0;
+}
+
+.errorMessage{
+  color: red;
 }
