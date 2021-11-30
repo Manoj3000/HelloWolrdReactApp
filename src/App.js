@@ -1,10 +1,11 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';  
 import './App.css';
 
 function App() {
+  const [message, setMessage] = useState("Hello World From BridgeLabz");
   return (
     <div className="App">
-     <h1>Hello World From BridgeLabz</h1>
+     <h1>{message}</h1>
     </div>
   );
 }
